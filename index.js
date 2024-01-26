@@ -10,10 +10,14 @@ function createCaptcha() {
       actualCaptcha.push(
         possible[Math.floor(Math.random() * (12 + possible.length) - 5)]
       );
+
+      console.log("even number posibility added");
     } else {
       actualCaptcha.push(
         possible[Math.floor(Math.random() * (7 + possible.length) - 2)]
       );
+
+      console.log("odd number posibility added");
     }
   }
 
